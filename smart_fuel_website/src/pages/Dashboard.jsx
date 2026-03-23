@@ -122,8 +122,8 @@ const Dashboard = () => {
       {/* Chart */}
       <div className="auth-card" style={{ width: '100%', padding: '24px', textAlign: 'left' }}>
         <h3 style={{ marginBottom: '16px', fontSize: '16px' }}>Fuel Usage History</h3>
-        <div style={{ height: '150px', width: '100%' }}>
-          <ResponsiveContainer width="100%" height="100%">
+        <div style={{ height: '150px', width: '100%', minWidth: 0 }}>
+          <ResponsiveContainer width="100%" height={150}>
             <LineChart data={mockData}>
               <Line 
                 type="monotone" 
